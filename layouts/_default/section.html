@@ -1,8 +1,5 @@
 {{ define "page" }}
-<article class="container">
-  {{ if ne .Kind "home" }}
-  <a href="{{ .Site.Home.RelPermalink }}">Home</a>
-  {{ end }}
+<article>
   <h1>{{ .Title }}</h1>
   <ul>
     {{ range .Paginator.Pages }}

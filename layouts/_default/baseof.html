@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
   </head>
   <body>
+    {{ partial "header.html" . }}
     {{ block "page" . }}{{ end }}
   </body>
 </html>
