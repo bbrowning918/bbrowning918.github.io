@@ -1,7 +1,5 @@
-{{ define "page" }}
-<article>
+{{ define "main" }}
   <a href="{{ .CurrentSection.RelPermalink }}">Back to {{ .CurrentSection.Title }}</a>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-</article>
 {{ end }}

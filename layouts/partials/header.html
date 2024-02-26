@@ -1,11 +1,11 @@
 <nav>
-  <a href="{{ .Site.BaseURL | relLangURL }}">
-    {{ .Site.Title }}
-  </a>
+  <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
   <ul>
     {{ range .Site.Menus.main}}
       <li>
         <a href="{{ .URL }}">{{ .Name }}</a>
       </li>
     {{ end }}
+  </ul>
+  <a href="javascript:void(0)" id="theme-switch" onclick="switchMode(this)">dark</a> 
 </nav>

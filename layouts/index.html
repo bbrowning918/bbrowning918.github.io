@@ -1,5 +1,4 @@
-{{ define "page" }}
-<article>
+{{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ range .Sections }}
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
@@ -11,5 +10,4 @@
     {{ end }}
   </ul>
   {{ end }}
-</article>
 {{ end }}

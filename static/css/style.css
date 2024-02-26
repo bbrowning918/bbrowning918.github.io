@@ -1,7 +1,48 @@
+
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
+
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
+}
+
+.dark {
+  --background-color: #242629;
+  --font-color: #fffffe;
+  --primary-color: #94a1b2;
+}
+
+
+.light {
+  --background-color: #fffffe;
+  --font-color: #242629;
+  --primary-color: #5f6c7b;
+}
+
+body {
+  background: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+select,
+pre,
+code,
+label {
+  color: var(--font-color);
+}
+
+button {
+  background-color: var(--primary-color);
+}
+a {
+  color: var(--primary-color);
 }

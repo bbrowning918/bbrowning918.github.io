@@ -1,5 +1,4 @@
-{{ define "page" }}
-<article>
+{{ define "main" }}
   <h1>{{ .Title }}</h1>
   <ul>
     {{ range .Paginator.Pages }}
@@ -8,5 +7,4 @@
       </li>
     {{ end }}
   </ul>
-</article>
 {{ end }}
