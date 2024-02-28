@@ -1,4 +1,3 @@
-
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
@@ -11,18 +10,26 @@
 .dark {
   --background-color: #242629;
   --font-color: #fffffe;
-  --primary-color: #94a1b2;
+  --primary-color: #a7a9be;
 }
 
 
 .light {
   --background-color: #fffffe;
   --font-color: #242629;
-  --primary-color: #5f6c7b;
+  --primary-color: #16161a;
 }
 
 body {
   background: var(--background-color);
+}
+
+body.dark #moon {
+  display: none;
+}
+
+body.light #sun {
+  display: none;
 }
 
 h1,
@@ -43,6 +50,22 @@ label {
 button {
   background-color: var(--primary-color);
 }
+
 a {
   color: var(--primary-color);
+  text-decoration: none;
 }
+
+.flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.justify-between { justify-content: space-between; }
+
+.max-w-5xl { max-width: 64rem; }
+
+.ml-4 { margin-left: 1rem; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.leading-15 { line-height: 4rem; }
+
+.list-none { list-style: none; }

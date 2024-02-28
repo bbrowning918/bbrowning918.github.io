@@ -24,16 +24,12 @@ function setScheme(scheme) {
   body.classList.add(scheme);
 }
 
-function switchMode(el) {
+function switchMode() {
   const bodyClass = body.classList;
   bodyClass.toggle('dark');
   bodyClass.toggle('light');
   
   bodyClass.contains('dark') ? saveScheme('dark') : saveScheme('light');
-  
-  bodyClass.contains('dark')
-    ? (el.innerHTML = 'light')
-    : (el.innerHTML = 'dark'); 
 }
 
 
