@@ -1,0 +1,11 @@
+<ul class="flex items-center p-0 m-0" aria-label="Breadcrumb">
+  {{ range .Ancestors.Reverse }}
+    <li class="inline-flex items-center">
+      <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </li>
+    <span class="px-2">&sol;</span>
+  {{ end }} 
+    <li class="inline-flex items-center">
+      <a aria-current="page" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </li>
+</ul>

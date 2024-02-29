@@ -1,3 +1,4 @@
-# Test Project
-
+---
+title: Test Project
+---
 A test project
