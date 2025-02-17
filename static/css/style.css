@@ -1,4 +1,5 @@
 @import '../fonts/inter.css';
+@import './colors.css';
 
 :root {
   font-family: Inter, sans-serif;
@@ -10,16 +11,16 @@
 }
 
 .dark {
-  --background-color: #242629;
-  --font-color: #fffffe;
-  --primary-color: #a7a9be;
+  --background-color: var(--neutral-9);
+  --font-color: var(--neutral-0);
+  --primary-color: var(--blue-5);
 }
 
 
 .light {
-  --background-color: #fffffe;
-  --font-color: #242629;
-  --primary-color: #16161a;
+  --background-color: var(--neutral-1);
+  --font-color: var(--neutral-10);
+  --primary-color: var(--blue-5);
 }
 
 body {
@@ -55,7 +56,7 @@ button {
 
 a,
 span {
-  color: var(--primary-color);
+  color: var(--font-color);
   text-decoration: none;
 }
 
