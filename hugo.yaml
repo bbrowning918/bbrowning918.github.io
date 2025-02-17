@@ -2,3 +2,9 @@ baseURL: https://bbrowning918.github.io/
 languageCode: en-us
 title: Ben's Site
 sectionPagesMenu: main
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true

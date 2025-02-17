@@ -68,7 +68,10 @@ span {
 
 .max-w-5xl { max-width: 64rem; }
 
+.bg-blue-5 { background-color: var(--blue-5); }
+
 .p-0 { padding: 0; }
+.p-20 { padding: 2.0rem; }
 .px-2 { padding-left: .5rem; padding-right: .5rem; }
 
 .m-0 { margin: 0; }
@@ -79,3 +82,11 @@ span {
 .leading-15 { line-height: 4rem; }
 
 .list-none { list-style: none; }
+
+.font-xs { font-size: 1.0rem; }
+.font-6xl { font-size: 6.0rem; }
+
+.font-thin { font-weight: 100; }
+.font-extrabold { font-weight: 800; }
+
+.text-white { color: var(--neutral-0); }
